@@ -57,14 +57,16 @@ export default {
   firebase: {
     users: userRef
   },
-  data:{
-    json_fields: {
-      "Maternal" : "Maternal",
-      "Name" : "Name",
-      "Nick" : "Nick",
-      "Password" : "Password",
-      "Paternal" : "Paternal"
-    } 
+  data: function(){
+      return{
+        json_fields: {
+          "Maternal" : "Maternal",
+          "Name" : "Name",
+          "Nick" : "Nick",
+          "Password" : "Password",
+          "Paternal" : "Paternal"
+        } 
+      }    
   },
   components: {
     HelloWorld
